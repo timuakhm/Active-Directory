@@ -36,4 +36,5 @@ If you want to re-create this project yourself, follow the following steps:
 - Create Backups
   - Make sure you have created backups of your VM and server configurations
 
-Done!
+# Visualization
+![Active Directory Infrastructure](https://github.com/timuakhm/Active-Directory/assets/171197854/1c0b53b4-1e7a-4c3b-b371-c2c8197c388e)
