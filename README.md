@@ -10,13 +10,16 @@ The objective of the Active Directory Lab project is to gain hands-on experience
 - Remote Access Configuration
 
 # Tools Used
-- VM Workstation
-- Windows 10 ISO
-- Windows Server 2019 ISO
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
 - Wi-Fi Router
 - Powershell ISE
 
-# Steps
+# Operating Systems Used
+- Windows 10 (22H2) ISO
+- Windows Server 2019 ISO
+
+# Configuration Steps
 If you want to re-create this project yourself, follow the following steps:
 - Setup your environment by installing Virtualization Software, in this lab I used Oracle VM VirtualBox
   - Make sure your Virtualization is enabled in your BIOS
@@ -39,3 +42,21 @@ If you want to re-create this project yourself, follow the following steps:
 
 # Flowchart
 ![Active Directory Infrastructure](https://github.com/timuakhm/Active-Directory/assets/171197854/1c0b53b4-1e7a-4c3b-b371-c2c8197c388e)
+Domain Controller has to have a static private IP Address. Client1 will connect to Domain Controller via the internal VM network. To ensure connectivity we will ping Domain Controller from Client1. Make sure to enable ICMPv4 on the Domain Controller firewall
+
+
+![Domain Controller Firewall Rules](https://github.com/timuakhm/Active-Directory/assets/171197854/234a21ef-dc1f-4231-85d4-9e4f93159c51)
+![client1 cmd](https://github.com/timuakhm/Active-Directory/assets/171197854/f3591107-c0b8-41fd-9cc7-25362369f4e9)
+
+Now we need to get back into Domain Controller to install Active Directory Users and Computers. As well as promote the VM to DC, and setup a new forest "mydomain.com" afterwards, restart and login to the Domain Controller as a user.
+![Active Directory Users and Computers](https://github.com/timuakhm/Active-Directory/assets/171197854/70b629b9-9c73-4089-b9ff-38ab1ab17337)
+![DC1 Admin](https://github.com/timuakhm/Active-Directory/assets/171197854/59205e9b-ad74-4811-bd63-64be37dd036f) 
+
+As seen above, we have created Organizational Units (OU) _ADMINS_ and _USERS_
+
+
+Lastly, we will use a PowerShell script to help us generate 1000 users into the domain. We will run the script in Powershell ISE
+![DC1 Users](https://github.com/timuakhm/Active-Directory/assets/171197854/554efbdb-d106-4995-ab19-03755814d29c)
+![DC1 Powershell ISE User Creation](https://github.com/timuakhm/Active-Directory/assets/171197854/f9867b0e-8e18-40b2-b85d-08af60946430)
+
+
