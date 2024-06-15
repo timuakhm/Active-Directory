@@ -11,7 +11,8 @@ The objective of the Active Directory Lab project is to gain hands-on experience
 
 # Tools Used
 - VM Workstation
-- Windows 2019 ISO
+- Windows 10 ISO
+- Windows Server 2019 ISO
 - Wi-Fi Router
 - Powershell ISE
 
@@ -36,5 +37,5 @@ If you want to re-create this project yourself, follow the following steps:
 - Create Backups
   - Make sure you have created backups of your VM and server configurations
 
-# Visualization
+# Flowchart
 ![Active Directory Infrastructure](https://github.com/timuakhm/Active-Directory/assets/171197854/1c0b53b4-1e7a-4c3b-b371-c2c8197c388e)
