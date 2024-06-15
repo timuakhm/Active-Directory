@@ -49,6 +49,7 @@ Domain Controller has to have a static private IP Address. Client1 will connect 
 ![client1 cmd](https://github.com/timuakhm/Active-Directory/assets/171197854/f3591107-c0b8-41fd-9cc7-25362369f4e9)
 
 Now we need to get back into Domain Controller to install Active Directory Users and Computers. As well as promote the VM to DC, and setup a new forest "mydomain.com" afterwards, restart and login to the Domain Controller as a user.
+
 ![Active Directory Users and Computers](https://github.com/timuakhm/Active-Directory/assets/171197854/70b629b9-9c73-4089-b9ff-38ab1ab17337)
 ![DC1 Admin](https://github.com/timuakhm/Active-Directory/assets/171197854/59205e9b-ad74-4811-bd63-64be37dd036f) 
 
@@ -56,6 +57,7 @@ As seen above, we have created Organizational Units (OU) _ADMINS_ and _USERS_
 
 
 Lastly, we will use a PowerShell script to help us generate 1000 users into the domain. We will run the script in Powershell ISE
+
 ![DC1 Users](https://github.com/timuakhm/Active-Directory/assets/171197854/554efbdb-d106-4995-ab19-03755814d29c)
 ![68747470733a2f2f692e696d6775722e636f6d2f457a57473875672e706e67](https://github.com/timuakhm/Active-Directory/assets/171197854/161510e3-5d52-4b54-a456-67aec6563738)
 
