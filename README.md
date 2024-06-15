@@ -1,4 +1,4 @@
-# Active-Directory
+# On-premise Active-Directory Deployment in Azure
 
 # Objective
 The objective of the Active Directory Lab project is to gain hands-on experience through designing and implementing an Active Directory using Server 2019. This involves provisioning, maintenance, and de-provisioning of 1000 user accounts to integrate administrative tasks. This project also aims to set up Remote Access Server (RAS) features to support Network Address Translation (NAT) and Port Addressing Translation (PAT).
